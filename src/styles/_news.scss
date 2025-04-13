@@ -1,0 +1,43 @@
+@import "variables";
+
+.news{
+    .news-list{
+        li{
+            border-bottom: 1px dashed $border-color;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            a{
+                color: $text-primary;
+                font-weight: 500;
+                transition: all .3s ease-out;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    .ant-tabs{
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 24px;
+
+        .ant-tabs-nav-list{
+            gap: 8px;
+            padding-bottom: 16px;
+        }
+
+        .ant-tabs-tab{
+            border-radius: 8px !important;
+            min-width: 100px;
+            justify-content: center;
+            align-items: center;
+            &.ant-tabs-tab-active{
+                background-color: $primary;
+                .ant-tabs-tab-btn{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

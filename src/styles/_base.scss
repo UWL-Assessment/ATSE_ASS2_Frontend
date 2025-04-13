@@ -1,0 +1,93 @@
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: $font-primary, serif !important;
+  overflow-x: hidden;
+}
+
+.ant-layout,
+.ant-menu,
+.ant-row,
+.ant-col,
+.ant-card,
+.ant-tabs {
+  font-family: $font-primary, serif !important;
+}
+
+.line-height-base {
+  line-height: 2;
+  color: $text-secondary;
+}
+
+.book-author {
+  margin-bottom: 10px;
+}
+
+.ant-layout {
+  background-color: #f8f8ff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.ant-layout-header {
+  background-color: #fff;
+}
+
+.mainWrapper {
+  padding: 50px 30px;
+  height: calc(100vh - 133px);
+  overflow: auto;
+}
+
+.home-wrapper {
+  padding: 100px;
+}
+
+:where(
+    .css-dev-only-do-not-override-49qm
+  ).ant-menu-light.ant-menu-root.ant-menu-inline {
+  border-inline-end: none !important;
+}
+
+// customn scrollbar
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.edit-btn {
+  height: 32px;
+  width: 32px;
+  border: 1px solid #1677ff;
+  border-radius: 50%;
+}

@@ -1,0 +1,55 @@
+@import "./../variables";
+
+.home-header {
+  padding: 0 100px;
+  line-height: unset;
+  height: unset;
+  .main-menu {
+    .menu-item {
+      display: inline-block;
+      position: relative;
+      a,
+      span {
+        display: block;
+        padding: 32px 24px;
+        color: $text-primary;
+        &:hover {
+          color: $primary;
+        }
+      }
+      &:hover {
+        .submenu {
+          display: block;
+        }
+      }
+      .submenu {
+        display: none;
+        position: absolute;
+        min-width: 280px;
+        background: #fff;
+        border-radius: 8px;
+        animation: slideUp 0.3s ease-out;
+        z-index: 1;
+        li {
+          a {
+            display: block;
+            padding: 8px 16px;
+            transition: all 0.3s ease-out;
+            &:hover {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

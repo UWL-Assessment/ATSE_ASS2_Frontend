@@ -1,0 +1,111 @@
+@import "./../variables";
+
+.sidebar {
+  background-color: #fff;
+  height: calc(100vh);
+  border-inline-end: 1px solid rgba(5, 5, 5, 0.06);
+  position: fixed;
+  overflow-y: auto;
+
+  .helper-text {
+    color: $red;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .ant-menu:has(.helper-text) {
+    .ant-menu-item-only-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  img {
+    transition: all 0.3s ease-out;
+  }
+  .title {
+    p {
+      color: $text-primary;
+      &:first-of-type {
+        font-weight: 600;
+      }
+    }
+  }
+  .ant-menu-title-content,
+  img {
+    font-weight: 600;
+    color: $text-secondary;
+  }
+
+  .ant-menu img {
+    background: $bg-primary;
+    fill: $text-secondary;
+    border-radius: 4px;
+    padding: 8px;
+    height: 35px;
+    width: 35px;
+    transition: all 0.3s ease-out;
+  }
+
+  .ant-menu-submenu-selected {
+    .ant-menu-submenu-title {
+      .ant-menu-title-content,
+      .ant-menu-submenu-arrow,
+      img {
+        color: $primary !important;
+      }
+    }
+    img {
+      background-color: $primary;
+      fill: #fff;
+    }
+  }
+
+  .ant-menu {
+    .ant-menu-item-only-child:first-child,
+    .ant-menu-item-only-child:nth-of-type(3),
+    .ant-menu-item-only-child:nth-of-type(6) {
+      pointer-events: none;
+    }
+  }
+
+  .ant-menu-item,
+  .ant-menu-submenu {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .ant-menu-sub {
+    .ant-menu-item-only-child {
+      pointer-events: unset !important;
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .ant-menu-item {
+    position: relative;
+
+    &.ant-menu-item-selected {
+      background-color: transparent;
+      .ant-menu-title-content {
+        color: $primary;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 1px;
+        top: 50%;
+        background-color: $primary;
+        height: 70%;
+        width: 4px;
+        border-radius: 0;
+        transform: translateY(-50%);
+      }
+      svg {
+        fill: $primary;
+      }
+    }
+  }
+}

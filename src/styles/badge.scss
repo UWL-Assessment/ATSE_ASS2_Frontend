@@ -1,0 +1,23 @@
+@import 'variables';
+
+.custom-avatar {
+    overflow: visible;
+    background: transparent;
+    height: 46px;
+    width: 46px;
+    img{
+        border-radius: 50%;
+    }
+   &::before{
+        content: '';
+        position: absolute;
+        bottom: -4px; 
+        right: 6px; 
+        transform: translate(50%, -50%);
+        height: 10px;
+        width: 10px;
+        background: $green;
+        border-radius: 50%;
+   }
+}
+  

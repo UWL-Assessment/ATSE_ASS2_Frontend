@@ -1,0 +1,14 @@
+@import "variables";
+
+.ant-layout-footer {
+    .footer {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+    background-color: #fff;
+    .copy-right{
+        font-weight: 600;
+        color: $text-secondary;
+    }
+}

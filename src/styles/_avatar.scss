@@ -1,0 +1,13 @@
+@import 'variables';
+
+.avatar-wrappeer{
+    .name{
+        color: $text-secondary;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .role{
+        color: $primary;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,37 @@
+@import "variables";
+
+.dashboard {
+  .icon-holder {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: $bg-primary-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    color: $primary;
+  }
+
+  .content-holder {
+    color: $text-primary;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .number-holder {
+    font-size: 40px;
+    font-weight: 700;
+    color: $text-secondary;
+    line-height: 1;
+    text-align: right;
+  }
+
+  .ant-card {
+    box-shadow: none;
+  }
+
+  .ant-card-body {
+    border-radius: 16px;
+  }
+}
