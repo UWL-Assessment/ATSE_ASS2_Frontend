@@ -10,11 +10,6 @@ lerna-debug.log*
 /src/Components/Modal/index.tsx
 /src/Components/Table/index.tsx
 
-/src/Layout/Home/Category/index.component.tsx
-/src/Layout/Home/Category/index.container.tsx
-/src/Layout/Home/Detail/Calendar.tsx
-/src/Layout/Home/Detail/index.tsx
-
 
 
 
