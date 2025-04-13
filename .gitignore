@@ -12,8 +12,6 @@ lerna-debug.log*
 
 /src/Layout/Home/Category/index.component.tsx
 /src/Layout/Home/Category/index.container.tsx
-/src/Layout/Home/Detail/Calendar.tsx
-/src/Layout/Home/Detail/index.tsx
 
 
 
