@@ -13,8 +13,14 @@ lerna-debug.log*
 
 
 
-/src/Pages
-/src/utils
+/src/Pages/BookList
+/src/Pages/Books
+/src/Pages/Categories
+/src/Pages/CategoriesList
+/src/Pages/Login
+/src/Pages/Register
+/src/Pages/User
+
 
 
 
