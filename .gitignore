@@ -7,10 +7,6 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-/src/Components/Modal/index.tsx
-/src/Components/Table/index.tsx
-
-
 
 
 /src/Pages/BookList
