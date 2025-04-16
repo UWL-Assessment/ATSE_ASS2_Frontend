@@ -1,16 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import type { FormProps } from "antd";
-import {
-  Button,
-  Card,
-  Col,
-  Flex,
-  Form,
-  Input,
-  Row,
-  Select,
-  Upload,
-} from "antd";
+import { Button, Card, Col, Form, Input, Row, Select, Upload } from "antd";
 import { BsCloudPlus } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 
@@ -43,6 +33,10 @@ const BooksComponent = () => {
 
   const handleCancel = () => {
     navigate("/books");
+  };
+
+  const handleSubmit = () => {
+    navigate("/abooks");
   };
 
   return (
@@ -104,8 +98,15 @@ const BooksComponent = () => {
                 <Col span={24}>
                   <Form.Item label="Select Category">
                     <Select>
-                      <Select.Option value="demo">Demo</Select.Option>
-                      <Select.Option value="demo">Demo2</Select.Option>
+                      <Select.Option value="Accounting">
+                        Accounting
+                      </Select.Option>
+                      <Select.Option value="Art">Art</Select.Option>
+                      <Select.Option value="Biology">Biology</Select.Option>
+                      <Select.Option value="Business">Business</Select.Option>
+                      <Select.Option value="Computer Science">
+                        Computer Science
+                      </Select.Option>
                     </Select>
                   </Form.Item>
                 </Col>
@@ -143,6 +144,7 @@ const BooksComponent = () => {
 
           <Form.Item>
             <Button
+              onClick={handleSubmit}
               type="primary"
               htmlType="submit"
               style={{

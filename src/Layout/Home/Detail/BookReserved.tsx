@@ -1,8 +1,7 @@
-import { Card, Col, Row, Tag } from "antd";
+import { Card, Col, Row, Tag, Button } from "antd";
 import { BsFillCheckCircleFill } from "react-icons/bs";
-import ReserveCalendar from "./Calendar";
 
-const Detail = () => {
+const ReservedDetail = () => {
   return (
     <section className="category">
       <Row gutter={48}>
@@ -32,15 +31,15 @@ const Detail = () => {
             >
               Available
             </Tag>
-            <div
-              style={{
-                marginTop: "16px",
-              }}
-            >
-              <ReserveCalendar />
+
+            <div style={{ marginTop: "16px" }}>
+              <Button type="default" disabled>
+                Book has been reserved
+              </Button>
             </div>
           </Card>
         </Col>
+
         <Col xs={24} md={12} lg={16}>
           <p className="line-height-base">
             Innovations in Governmental Accounting explores the evolution and
@@ -63,4 +62,4 @@ const Detail = () => {
   );
 };
 
-export default Detail;
+export default ReservedDetail;

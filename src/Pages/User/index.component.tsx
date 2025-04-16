@@ -105,7 +105,7 @@ const columns: TableProps<DataType>["columns"] = [
 const data = [
   {
     key: "001",
-    user: "John Brown",
+    user: "Ram Gurung",
     ReservedBook: 2,
     status: "Returned",
     ReservedDate: "2025-03-20",
@@ -113,27 +113,27 @@ const data = [
   },
   {
     key: "002",
-    user: "Karma Gurung",
+    user: "Prayes Tamang",
+    ReservedBook: 1,
+    status: "Returned",
+    ReservedDate: "2025-04-01",
+    ReturningDate: "2025-04-07",
+  },
+  {
+    key: "003",
+    user: "Aashish Sunuwar",
+    ReservedBook: 2,
+    status: "Reserved",
+    ReservedDate: "2025-04-12",
+    ReturningDate: "2025-04-19",
+  },
+  {
+    key: "004",
+    user: "karma Gurung",
     ReservedBook: 1,
     status: "Reserved",
-    ReservedDate: "2025-03-31",
-    ReturningDate: "2025-04-05",
-  },
-  {
-    key: "003",
-    user: "Sam Gurung",
-    ReservedBook: 2,
-    status: "Returned",
-    ReservedDate: "2025-03-31",
-    ReturningDate: "2025-04-03",
-  },
-  {
-    key: "003",
-    user: "Ram Gurung",
-    ReservedBook: 3,
-    status: "Reserved",
-    ReservedDate: "2025-04-01",
-    ReturningDate: "2025-04-08",
+    ReservedDate: "2025-04-16",
+    ReturningDate: "2025-04-23",
   },
 ];
 

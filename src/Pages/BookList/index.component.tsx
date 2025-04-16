@@ -64,7 +64,7 @@ const columns: TableProps<DataType>["columns"] = [
               shape="circle"
               icon={<BsPencilSquare style={{ color: "#00B615" }} />}
               style={{ borderColor: "#00B615" }}
-              href="/books/edit"
+              href="/ubooks"
               className="edit-btn"
             />
           </Tooltip>
@@ -80,24 +80,94 @@ const columns: TableProps<DataType>["columns"] = [
 const data = [
   {
     key: "0001",
-    bookName: "Atomic Habits",
-    authorName: "James Clear",
-    category: "Pysology",
-    available: 5,
+    bookName: "Innovations in Governmental Accounting",
+    authorName: "Vicente Montesinos, José Manuel Vela",
+    category: "Finance",
+    available: 10,
   },
   {
     key: "0002",
-    bookName: "The Big Data",
-    authorName: "Dr. Chen",
-    category: "Science",
+    bookName: "The Complete Idiot's Guide to Social Security and Medicare",
+    authorName: "Lita Epstein",
+    category: "Finance",
     available: 0,
   },
   {
     key: "0003",
-    bookName: "Research Methodology",
-    authorName: "Dr. Julie",
-    category: "Engineering",
+    bookName: "Accounting 101",
+    authorName: "Michele Cagan",
+    category: "Finance",
+    available: 15,
+  },
+  {
+    key: "0004",
+    bookName: "Financial & Managerial Accounting",
+    authorName: "Jan R. Williams",
+    category: "Finance",
+    available: 2,
+  },
+  {
+    key: "0005",
+    bookName: "The Portfolio Theorists",
+    authorName: "C. Read",
+    category: "Finance",
+    available: 1,
+  },
+  {
+    key: "0006",
+    bookName: "Accounting Information Systems",
+    authorName: "Leslie Turner, Andrea B. Weickgenannt",
+    category: "Finance",
+    available: 5,
+  },
+  {
+    key: "0007",
+    bookName: "Introduction to Financial Accounting",
+    authorName: "Charles T. Horngren, Gary L. Sundem, John A. Elliott",
+    category: "Finance",
+    available: 6,
+  },
+  {
+    key: "0008",
+    bookName: "Financial Accounting and Reporting",
+    authorName: "Barry Elliott, Jamie Elliott",
+    category: "Finance",
+    available: 4,
+  },
+  {
+    key: "0009",
+    bookName: "Encyclopedia of Finance",
+    authorName: "Cheng-Few Lee",
+    category: "Finance",
     available: 3,
+  },
+  {
+    key: "0010",
+    bookName: "Corporate Reporting",
+    authorName: "G. K. Everingham, Suresh Parbhoo Kana",
+    category: "Finance",
+    available: 0,
+  },
+  {
+    key: "0011",
+    bookName: "Radically Simple Accounting",
+    authorName: "Madeline Bailey",
+    category: "Finance",
+    available: 0,
+  },
+  {
+    key: "0012",
+    bookName: "Global Financial Meltdown",
+    authorName: "C. Read",
+    category: "Finance",
+    available: 13,
+  },
+  {
+    key: "0013",
+    bookName: "A History of Accounting and Accountants",
+    authorName: "Richard Brown",
+    category: "Finance",
+    available: 2,
   },
 ];
 

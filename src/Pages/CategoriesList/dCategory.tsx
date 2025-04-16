@@ -44,7 +44,7 @@ const columns: TableProps<DataType>["columns"] = [
   {
     title: "Action",
     key: "action",
-    render: (_, record) => (
+    render: () => (
       <Space size="middle">
         <Flex wrap gap="small">
           <Tooltip title="Edit">
@@ -95,16 +95,9 @@ const data = [
       "Gain insights into entrepreneurship, management, marketing, and the dynamics of the global economy.",
     noBooks: 2,
   },
-  {
-    key: "00005",
-    category: "Computer Science",
-    discription:
-      "Delve into algorithms, software development, artificial intelligence, and the technology that shapes our world.",
-    noBooks: 1,
-  },
 ];
 
-const CategoriesListComponent = () => {
+const CategoriesDComponent = () => {
   const navigate = useNavigate();
   const handleAddNew = () => {
     navigate("/categories/create");
@@ -132,4 +125,4 @@ const CategoriesListComponent = () => {
   );
 };
 
-export default CategoriesListComponent;
+export default CategoriesDComponent;
