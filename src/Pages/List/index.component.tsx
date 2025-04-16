@@ -1,5 +1,4 @@
 import { Card, Col, Row, Tag } from "antd";
-import book from "./../../assets/imges/book.png";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import ReserveCalendar from "../../Layout/Home/Detail/Calendar";
 

@@ -2,9 +2,13 @@ import DashbaordContainer from "./../Pages/Dashboard/index.container";
 import DashboradLayout from "./../Layout/Layout";
 import User from "../Pages/User/index.container";
 import Books from "../Pages/Books/index.container";
+import BookAddList from "../Pages/BookList/add";
+import BooksAComponent from "../Pages/Books/ebook";
 import ReservedDetail from "../Layout/Home/Detail/BookReserved";
 import Categories from "../Pages/Categories/index.container";
+import CategoriesDComponent from "../Pages/CategoriesList/dCategory";
 import Category from "../Layout/Home/Category/index.container";
+
 import HomeLayout from "../Layout/HomeLayout";
 import List from "../Pages/List/index.container";
 import BookList from "../Pages/BookList/index.container";
@@ -41,6 +45,18 @@ const routes: Array<routeInterface> = [
   },
   {
     name: "Books",
+    path: "/abooks",
+    element: BookAddList,
+    layout: DashboradLayout,
+  },
+  {
+    name: "Books",
+    path: "/ubooks",
+    element: BooksAComponent,
+    layout: DashboradLayout,
+  },
+  {
+    name: "Books",
     path: "/books/create",
     element: Books,
     layout: DashboradLayout,
@@ -73,6 +89,13 @@ const routes: Array<routeInterface> = [
     name: "Categories",
     path: "/categories/create",
     element: Categories,
+    layout: DashboradLayout,
+  },
+
+  {
+    name: "Categories",
+    path: "/dCategories",
+    element: CategoriesDComponent,
     layout: DashboradLayout,
   },
   {

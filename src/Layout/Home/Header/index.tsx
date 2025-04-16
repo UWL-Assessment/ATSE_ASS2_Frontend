@@ -1,6 +1,5 @@
 import { Button, Flex } from "antd";
 import { Link, useNavigate } from "react-router-dom";
-import { BsLockFill } from "react-icons/bs";
 import Logo from "./../../../assets/imges/dummy-logo-02.png";
 import { FiLogOut } from "react-icons/fi";
 

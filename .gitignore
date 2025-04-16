@@ -12,6 +12,13 @@ lerna-debug.log*
 
 /src/Pages/Login
 /src/Pages/Register
+/src/Pages/BookList/add.tsx
+/src/Pages/Books/eBook.tsx
+
+/src/Pages/CategoriesList/dCategory.
+
+
+
 
 
 

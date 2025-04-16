@@ -1,5 +1,4 @@
 import { Button, Card, Col, Row, Tag } from "antd";
-import book from "./../../../assets/imges/book.png";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 
