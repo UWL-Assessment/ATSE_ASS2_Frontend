@@ -3,30 +3,28 @@ import { Button, Flex, Modal } from "antd";
 import { Calendar, theme } from "antd";
 import type { CalendarProps } from "antd";
 import dayjs, { Dayjs } from "dayjs";
+import { useNavigate } from "react-router-dom";
 
 const onPanelChange = (value: Dayjs, mode: CalendarProps<Dayjs>["mode"]) => {
   console.log(value.format("YYYY-MM-DD"), mode);
 };
 
 const ReserveCalendar: React.FC = () => {
-  const [selectedValue, setSelectedValue] = useState(() => dayjs("2017-01-25"));
-  const { token } = theme.useToken();
+  const [selectedValue, setSelectedValue] = useState(() => dayjs());
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { token } = theme.useToken();
+  const navigate = useNavigate();
 
   const handleSelect = (newValue: Dayjs) => {
     setSelectedValue(newValue);
   };
 
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
+  const showModal = () => setIsModalOpen(true);
+  const handleCancel = () => setIsModalOpen(false);
 
-  const handleOk = () => {
-    setIsModalOpen(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalOpen(false);
+  const bookReserved = () => {
+    // Navigate to reserved page
+    navigate("/reserveBook");
   };
 
   const wrapperStyle: React.CSSProperties = {
@@ -63,8 +61,8 @@ const ReserveCalendar: React.FC = () => {
             <p>Returning Date</p>
             <p>{selectedValue?.format("DD, MMMM, YYYY")}</p>
           </div>
-          <Button key="submit" type="primary" onClick={handleOk}>
-            Reserve
+          <Button key="submit" type="primary" onClick={bookReserved}>
+            Reserve Book
           </Button>
         </Flex>
         <Flex justify="center">

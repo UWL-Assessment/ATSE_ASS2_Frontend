@@ -1,31 +1,32 @@
 import { Button, Flex } from "antd";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BsLockFill } from "react-icons/bs";
 import Logo from "./../../../assets/imges/dummy-logo-02.png";
+import { FiLogOut } from "react-icons/fi";
 
 const header = [
   {
     name: "Categories",
     child: [
       {
-        name: "Science",
-        slug: "/science",
+        name: "Accounting",
+        slug: "/accounting",
       },
       {
-        name: "Engineering",
-        slug: "/engineering",
+        name: "Art",
+        slug: "/art",
       },
       {
-        name: "Economics",
-        slug: "/economics",
+        name: "Biology",
+        slug: "/biology",
       },
       {
-        name: "Finance",
-        slug: "/finance",
+        name: "Business",
+        slug: "/business",
       },
       {
-        name: "Pshycology",
-        slug: "/pshycology",
+        name: "Computer Science",
+        slug: "/computerScience",
       },
     ],
   },
@@ -40,6 +41,12 @@ const header = [
 ];
 
 const HomeHeader = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    navigate("/"); // or navigate("/") to go to homepage
+  };
+
   return (
     <Flex justify="space-between" align="center">
       <div>
@@ -79,8 +86,13 @@ const HomeHeader = () => {
           })}
         </ul>
         <div>
-          <Button type="link" icon={<BsLockFill />}>
-            Login
+          <Button
+            type="link"
+            icon={<FiLogOut />}
+            style={{ color: "red" }}
+            onClick={handleLogout}
+          >
+            Log Out
           </Button>
         </div>
       </Flex>

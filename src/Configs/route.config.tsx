@@ -2,6 +2,7 @@ import DashbaordContainer from "./../Pages/Dashboard/index.container";
 import DashboradLayout from "./../Layout/Layout";
 import User from "../Pages/User/index.container";
 import Books from "../Pages/Books/index.container";
+import ReservedDetail from "../Layout/Home/Detail/BookReserved";
 import Categories from "../Pages/Categories/index.container";
 import Category from "../Layout/Home/Category/index.container";
 import HomeLayout from "../Layout/HomeLayout";
@@ -49,6 +50,12 @@ const routes: Array<routeInterface> = [
     path: "/books/edit",
     element: Books,
     layout: DashboradLayout,
+  },
+  {
+    name: "ReserveBook",
+    path: "/reserveBook",
+    element: ReservedDetail,
+    layout: HomeLayout,
   },
   {
     name: "Categories",

@@ -5,52 +5,96 @@ import { useNavigate } from "react-router-dom";
 
 const category = [
   {
-    title: "Atomic Habit",
-    autor: "James Clear",
-    image: book,
+    title: "Innovations in Governmental Accounting",
+    autor: "Vicente Montesinos, José Manuel Vela",
+    image:
+      "https://books.google.com/books/content?id=rqzwBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
     status: "Available",
   },
   {
-    title: "Atomic Habit",
-    autor: "James Clear",
-    image: book,
+    title: "The Complete Idiot's Guide to Social Security and Medicare",
+    autor: "Lita Epstein",
+    image:
+      "https://books.google.com/books/content?id=q8o0e_MGzYwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
     status: "Unavailable",
   },
   {
-    title: "Atomic Habit",
-    autor: "James Clear",
-    image: book,
+    title: "Accounting 101",
+    autor: "Michele Cagan",
+    image:
+      "https://books.google.com/books/content?id=_ZHGDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
     status: "Available",
   },
   {
-    title: "Atomic Habit",
-    autor: "James Clear",
-    image: book,
+    title: "Financial & Managerial Accounting",
+    autor: "Jan R. Williams",
+    image:
+      "https://books.google.com/books/content?id=DViFNQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
     status: "Available",
   },
   {
-    title: "Atomic Habit",
-    autor: "James Clear",
-    image: book,
+    title: "The Portfolio Theorists",
+    autor: "C. Read",
+    image:
+      "https://books.google.com/books/content?id=YZd9DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
     status: "Available",
   },
   {
-    title: "Atomic Habit",
-    autor: "James Clear",
-    image: book,
+    title: "Accounting Information Systems",
+    autor: "Leslie Turner, Andrea B. Weickgenannt",
+    image:
+      "https://books.google.com/books/content?id=mJYEKkush38C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
     status: "Available",
   },
   {
-    title: "Atomic Habit",
-    autor: "James Clear",
-    image: book,
+    title: "Introduction to Financial Accounting",
+    autor: "Charles T. Horngren, Gary L. Sundem, John A. Elliott",
+    image:
+      "https://books.google.com/books/content?id=ORaaAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
     status: "Available",
   },
   {
-    title: "Atomic Habit",
-    autor: "James Clear",
-    image: book,
+    title: "Financial Accounting and Reporting",
+    autor: "Barry Elliott, Jamie Elliott",
+    image:
+      "https://books.google.com/books/content?id=aSSjDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
     status: "Available",
+  },
+
+  {
+    title: "Encyclopedia of Finance",
+    autor: "Cheng-Few Lee",
+    image:
+      "https://books.google.com/books/content?id=I6BH-RKYVG4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    status: "Available",
+  },
+  {
+    title: "Corporate Reporting",
+    autor: "G. K. Everingham, Suresh Parbhoo Kana",
+    image:
+      "https://books.google.com/books/content?id=vI9Mo3bQ5J8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    status: "Unavailable",
+  },
+  {
+    title: "Radically Simple Accounting",
+    autor: "Madeline Bailey",
+    image:
+      "https://books.google.com/books/content?id=PWm-BIlsxGMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    status: "Available",
+  },
+  {
+    title: "Global Financial Meltdown",
+    autor: "C. Read",
+    image:
+      "https://books.google.com/books/content?id=x5p_DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    status: "Available",
+  },
+  {
+    title: "A History of Accounting and Accountants",
+    autor: "Richard Brown",
+    image:
+      "https://books.google.com/books/content?id=iBpaLgaatnYC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    status: "Unavailable",
   },
 ];
 const CategoryComponent = () => {

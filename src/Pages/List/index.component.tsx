@@ -1,25 +1,42 @@
-import { Button, Card, Col, Row, Tag } from "antd";
+import { Card, Col, Row, Tag } from "antd";
 import book from "./../../assets/imges/book.png";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import ReserveCalendar from "../../Layout/Home/Detail/Calendar";
 
 const list = [
   {
-    title: "Atomic Habit",
-    author: "James Clear",
-    image: book,
+    title: "Innovations in Governmental Accounting",
+    author: "Vicente Montesinos, José Manuel Vela",
+    image:
+      "https://books.google.com/books/content?id=rqzwBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
     status: "Available",
   },
   {
-    title: "Atomic Habit",
-    author: "James Clear",
-    image: book,
+    title: "Accounting 101",
+    author: "Michele Cagan",
+    image:
+      "https://books.google.com/books/content?id=_ZHGDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
     status: "Available",
   },
   {
-    title: "Atomic Habit",
-    author: "James Clear",
-    image: book,
+    title: "Financial & Managerial Accounting",
+    author: "Jan R. Williams",
+    image:
+      "https://books.google.com/books/content?id=DViFNQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    status: "Available",
+  },
+  {
+    title: "Accounting Information Systems",
+    author: "Leslie Turner, Andrea B. Weickgenannt",
+    image:
+      "https://books.google.com/books/content?id=mJYEKkush38C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    status: "Available",
+  },
+  {
+    title: "Radically Simple Accounting",
+    autor: "Madeline Bailey",
+    image:
+      "https://books.google.com/books/content?id=PWm-BIlsxGMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
     status: "Available",
   },
 ];
@@ -33,7 +50,7 @@ const ListComponent = () => {
             <Col xs={24} md={12} lg={8} key={i}>
               <Card>
                 <img
-                  src={book}
+                  src={item.image}
                   alt="book"
                   height={300}
                   style={{ marginBottom: "16px" }}
