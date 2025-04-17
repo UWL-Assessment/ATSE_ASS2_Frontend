@@ -26,7 +26,7 @@ const DashboardComponent = () => {
               <MdOutlinePeopleAlt size={42} />
             </div>
             <p className="content-holder">Users</p>
-            <h1 className="number-holder">12</h1>
+            <h1 className="number-holder">04</h1>
           </Card>
         </Col>
         <Col xs={24} md={12} lg={8}>
@@ -40,7 +40,7 @@ const DashboardComponent = () => {
               <MdMenuBook size={42} />
             </div>
             <p className="content-holder">Books</p>
-            <h1 className="number-holder">12</h1>
+            <h1 className="number-holder">13</h1>
           </Card>
         </Col>
         <Col xs={24} md={12} lg={8}>
@@ -54,7 +54,7 @@ const DashboardComponent = () => {
               <MdCategory size={42} />
             </div>
             <p className="content-holder">Categories</p>
-            <h1 className="number-holder">12</h1>
+            <h1 className="number-holder">05</h1>
           </Card>
         </Col>
       </Row>
